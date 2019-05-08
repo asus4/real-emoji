@@ -47,7 +47,6 @@ export default class Home extends Vue {
     const modelpath = 'https://justadudewhohacks.github.io/face-api.js/models'
     await faceapi.loadTinyFaceDetectorModel(modelpath)
     await faceapi.loadFaceExpressionModel(modelpath)
-    await faceapi.loadFaceLandmarkModel(modelpath)
 
     this.isLoading = false
   }
